@@ -1,38 +1,103 @@
-.App {
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.ag-courses_box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+
+
+}
+
+
+.ag-courses_item {
+  width: calc(50% - 20px);
+  max-width: 430px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.ag-courses_item {
+  width: calc(50% - 20px);
+  width: 430px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.ag-courses-item_link {
+  display: block;
+  padding: 10px;
+border: 3px solid black;
+  overflow: hidden;
+  position: relative;
+}
+.ag-courses-item_link:hover{
+  color: black;
+}
+.ag-courses-item_link:hover,
+.ag-courses-item_link:hover .ag-courses-item_date {
+  text-decoration: none;
+  color: black;
+
+}
+
+.ag-courses-item_link:hover .ag-courses-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+
+}
+
+.ag-courses-item_title {
+  color: #030303;
+  z-index: 2;
+  position: relative;
+}
+
+.ag-courses-item_bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f7ff85;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.img-avatar-box {
+  height: 130px;
+  width: 150px;
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card h4 {
+  margin: 10px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.count-comm {
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 100%;
+  gap: 30px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
